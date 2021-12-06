@@ -1,4 +1,3 @@
-# UGR-SCD/S1
+# Seminario 1
 
-**Seminario 1**
-Programación multihebrada y semáforos
+**Programación multihebrada y semáforos**

@@ -1,4 +1,3 @@
-# UGR-SCD/P1
+# Práctica 1
 
-**Práctica 1**
-Sincronización de hebras con semáforos
+**Sincronización de hebras con semáforos**
