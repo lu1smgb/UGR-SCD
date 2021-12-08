@@ -94,12 +94,12 @@ void funcion_tenedores( int id )
   while ( true )
   {
      // Recibimos la solicitud del filósofo para ocuparse y guardamos su identificador
-     MPI_Recv( &valor, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, &estado);
+     MPI_Recv( &valor, 1, MPI_INT, MPI_ANY_SOURCE, etiq_ocup, MPI_COMM_WORLD, &estado);
      id_filosofo = estado.MPI_SOURCE;
      cout <<"Ten. " <<id <<" ha sido cogido por filo. " <<id_filosofo <<endl;
 
      // Recibimos la solicitud del filósofo para liberarse
-     MPI_Recv( &valor, 1, MPI_INT, id_filosofo, 0, MPI_COMM_WORLD, &estado);
+     MPI_Recv( &valor, 1, MPI_INT, id_filosofo, etiq_lib, MPI_COMM_WORLD, &estado);
      cout <<"Ten. "<< id<< " ha sido liberado por filo. " <<id_filosofo <<endl ;
   }
 }
