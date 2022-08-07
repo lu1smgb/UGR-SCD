@@ -1,3 +1,3 @@
 # Práctica 1
 
-**Sincronización de hebras con semáforos**º
+**Sincronización de hebras con semáforos**
